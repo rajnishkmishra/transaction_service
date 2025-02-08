@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "d42ef95b-1a03-49b7-8310-032aa05ce41f",
+		"name": "TrasactionService",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17858592"
+	},
+	"item": [
+		{
+			"name": "CreateTransaction",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/transactionservice/transaction",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"transactionservice",
+						"transaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MakePayment",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"amount\": 4000,\n    \"type\": \"cars\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/transactionservice/transaction/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"transactionservice",
+						"transaction",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetTransactionByID",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/transactionservice/transaction/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"transactionservice",
+						"transaction",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetTransactionByType",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/transactionservice/types/cars",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"transactionservice",
+						"types",
+						"cars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSum",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/transactionservice/sum/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"transactionservice",
+						"sum",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
