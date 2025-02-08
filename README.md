@@ -61,3 +61,4 @@ Running the Application:
 - For running the application run below command from your terminal
 <pre> docker-compose up --build </pre>
 - This will spin up the API along with the MySQL database.
+- Now you can hit APIs from postman (Import the provided postman collection: TrasactionService.postman_collection.json).
